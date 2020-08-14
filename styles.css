@@ -1,0 +1,243 @@
+/* Global Styles
+------------------------------------------ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Caveat', cursive;
+  font-family: 'Lato', sans-serif;
+  color: #343434;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+img {
+  width: 300px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+.item-details h3 + p {
+  font-style: italic;
+}
+
+.item-details h3 ~ p {
+ margin: 0;
+}
+
+.divider > section {
+  border-bottom: 1px dashed #fff;
+  padding: 25px 0;
+}
+
+.divider > section:last-of-type {
+  border-bottom: hidden;
+}
+
+i {
+  cursor: pointer;
+}
+
+i:hover {
+  color: #494bac;
+}
+/* Profile
+------------------------------------------ */
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(39, 26, 26, 0.7)), url("./img/header.webp");
+  color: #f7f7f7;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.intro h1 {
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+.intro h2 {
+  line-height: 2;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.intro p {
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* Navigation
+---------------------------------------------- */
+nav #main-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav #main-nav li {
+  list-style: none;
+}
+
+nav #main-nav li a {
+  padding: 8px 0;
+  font-size: 20px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+nav #main-nav li a:hover {
+  border-bottom: 2px solid #494bac;
+}
+
+/* Intro
+------------------------------------------------- */
+.intro {
+ height: 370px;
+}
+
+/* Projects
+------------------------------------------ */
+#projects { 
+  background: #f3f3f3;
+}
+
+#projects a {
+  color: #2F3061;
+  text-decoration: underline;
+}
+
+#projects .btn {
+  color: #F7FFF7;
+  background: #2f3061;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+#projects .btn:hover {
+  background: rgba(47, 48, 97, 80%);
+}
+.project-item {
+  overflow: hidden;
+}
+
+.project-item h3 {
+  margin-top: 0;
+}
+
+.other-divider > section {
+  border-bottom: 1px dashed #343434;
+}
+
+/* Work Experience
+---------------------------------------------- */
+#work-experience {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./img//work-experience.webp");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+/* Education
+------------------------------------------------- */
+#education {
+  background-color: #f3f3f3;
+}
+
+
+/* Contact List
+---------------------------------------------- */
+footer {
+  background: #333;
+  color: #f7f7f7;
+  height: 280px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+.contact-list a {
+  padding-left: 20px;
+  display: inline-block;
+}
+
+/* Responsive
+------------------------------------------------- */
+@media screen and (min-width: 750px) {
+  header, footer {
+    text-align: center;
+  }
+
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+  .contact-list {
+    display: flex; 
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  h1 {
+    font-size: 50px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+  }
+  h2 {
+    line-height: 1;
+  }
+
+  .contact-list a {
+    padding: 5px;
+  }
+}
