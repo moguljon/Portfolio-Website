@@ -240,4 +240,7 @@ footer {
   .contact-list a {
     padding: 5px;
   }
+  nav #main-nav {
+    display: none;
+   }
 }
